@@ -10,20 +10,20 @@ import org.junit.Test;
  * Exercise 1: Mocking and Stubbing
  * - Create a mock of ExternalAPI
  * - Stub its getData() method to return "Mock Data"
- * - Assert that MyService.fetchData() returns the mocked value
+ * - Assert that myService.fetchData() returns the mocked value
  *
  * @author Avutapalli Ram Charan
  */
 public class MyServiceMockingTest {
 
     private ExternalAPI mockApi;
-    private Service service;
+    private Service myService;
 
     @Before
     public void setUp() {
         // Arrange: Create mock
         mockApi = mock(ExternalAPI.class);
-        service = new Service(mockApi);
+        myService = new Service(mockApi);
     }
 
     @Test
@@ -32,7 +32,7 @@ public class MyServiceMockingTest {
         when(mockApi.getData()).thenReturn("Mock Data");
 
         // Act
-        String result = service.fetchData();
+        String result = myService.fetchData();
 
         // Assert
         assertEquals("Mock Data", result);
