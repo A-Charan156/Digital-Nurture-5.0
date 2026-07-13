@@ -1,0 +1,25 @@
+.formatstyle {
+  border: 1px solid #e0e0e0;
+  padding: 25px;
+  margin: 40px auto;
+  max-width: 320px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  font-family: Arial, sans-serif;
+}
+
+.formatstyle h3 {
+  color: #2f7373;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 22px;
+  text-align: center;
+}
+
+.formatstyle div {
+  font-size: 15px;
+  margin: 10px 0;
+  color: #333333;
+}
